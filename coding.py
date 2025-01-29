@@ -9,7 +9,7 @@ def fun1():
 
 @app.route("/view_resume")
 def view_resume():
-    return send_from_directory(directory="static/images", path="resume.pdf")
+    return send_from_directory(directory="static/images", path="DOC-20240905-WA0038.pdf")
 
 
 @app.route('/submit', methods=['POST'])
