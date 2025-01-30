@@ -305,3 +305,48 @@ form button:hover {
         display: block;
     }
 }
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    animation: slideDown 0.8s ease-in-out;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+button:hover {
+    animation: bounce 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about, #resume, #projects, #skills, #contact {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+#about { animation-delay: 0.2s; }
+#resume { animation-delay: 0.4s; }
+#projects { animation-delay: 0.6s; }
+#skills { animation-delay: 0.8s; }
+#contact { animation-delay: 1s; }
