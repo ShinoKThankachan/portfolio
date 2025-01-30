@@ -54,7 +54,7 @@ body, html {
 }
 
 .navbar ul li a:hover {
-	background-color: #3a74d0;
+	background-color: #008f078a;
 	transform: scale(1.05);
 }
 
@@ -86,7 +86,7 @@ body, html {
     align-items: center;
     min-height: 100vh;
     padding: 0 50px;
-    background: url('../images/sb-blog-programming.png') no-repeat center center/cover;
+    background: url('../images/home.jpg') no-repeat center center/cover;
     color: white;
     text-align: left;
     margin-bottom: 2px;
@@ -98,44 +98,54 @@ body, html {
 }
 
 #home span {
-    color: #ffc107;
+    color: #ffae00e5;
 }
 
-#home .image img {
+/* #home .image img {
     max-width: 450px;
     height: 500px;
     border: 5px solid #000000;
-}
+} */
 
 
 #about {
     padding: 80px 50px;
-    background: url('../images/pngtree-abstract-playful-portfolio-pink-memphis-image_593415.jpg') no-repeat center center/cover;
-    color: rgb(0, 0, 0);
+    background: url('../images/abstract-background-gradient-modern-design_677411-3055.avif') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
     margin-bottom: 3px;
+   
 }
 
 .about-container {
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-left: 650px;
+
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 5px solid #000000;
     object-fit: cover;
+    margin-left: 50px;
 }
 
 .about-details {
     max-width: 500px;
+     
 }
 
 .about-details h2 {
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 20px;
+    margin-left: 90px;
+}
+.about-details ul{
+    list-style: none;
+    font-size: large;
 }
 
 
