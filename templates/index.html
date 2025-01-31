@@ -30,7 +30,12 @@
 	</div>
 		<section id="home">
 			<div class="content">
-				<h1>Hello! <br> I'm <span>Shino K Thankachan <br>Python FullStack Web Developer</span></h1>
+				<h1>Hello! <br> I'm <span>Shino K Thankachan <br>Python FullStack Web Developer</span></h1><br><br>
+				<p>An aspiring web developer passionate about creating beautiful, functional, and user-friendly websites. With a growing skill set in HTML, CSS, JavaScript, and React, I'm eager to build modern web applications that enhance user experiences.
+
+					I love solving problems, learning new technologies, and bringing creative ideas to life through code. Currently, I'm expanding my knowledge in backend development, APIs, and databases to become a full-stack developer.</p><br><br><br>
+
+					<button id="b1"><a href="#contact">Hire me</a></button>
 				<!-- <div class="buttons">
 					<a href="#" class="btn yellow">Hire Me</a>
 					<a href="#" class="btn">My Works</a>
@@ -46,7 +51,7 @@
 		<div class="about-container">
 			<div class="about-content">
 				<img src="{{ url_for('static', filename='images/IMG-20241229-WA0059.jpg') }}" alt="Profile Picture"
-					class="profile-image">
+					class="profile-image"><br><br>
 				<div class="about-details">
 					<h2>About Me</h2>
 					<ul>
@@ -79,12 +84,22 @@
 			<h2>My Projects</h2>
 			<div class="project-grid">
 				<div class="project">
+					<a href="https://github.com/ShinoKThankachan/Nike_clone.git" target="_blank">
+						<img src="{{ url_for('static', filename='images/nike-logo-png_seeklogo-99478.png') }}" alt="Project 1"
+							class="project-image">
+					</a>
+					<h1>Nike Clone</h1>
+					<p>Project 1</p>
+				</div>
+			</div>
+			<div class="project-grid">
+				<div class="project">
 					<a href="https://github.com/ShinoKThankachan/E_commerce.git" target="_blank">
 						<img src="{{ url_for('static', filename='images/Construction-site-people-working.jpg') }}" alt="Project 1"
 							class="project-image">
 					</a>
-					<h1>Build Base construction materials</h1>
-					<p>Project 1</p>
+					<h1>Build Base E-commerce</h1>
+					<p>Project 2</p>
 				</div>
 			</div>
 		</div>
