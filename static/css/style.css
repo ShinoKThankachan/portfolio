@@ -67,8 +67,8 @@ body, html {
 	display: none;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 30px;
-	height: 25px;
+	width: 15px;
+	height: 20px;
 	cursor: pointer;
 }
 
@@ -198,7 +198,7 @@ body, html {
 .projects-container {
     max-width: 1200px;
     margin: auto;
-    background: rgba(0, 0, 0, 0.6); /* Subtle overlay for better text readability */
+    background: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
 }
@@ -206,7 +206,7 @@ body, html {
 h2 {
     font-size: 2.2em;
     margin-bottom: 30px;
-    color: #ffc107; /* Highlighted title */
+    color: #ffc107;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -220,7 +220,7 @@ h2 {
 }
 
 .project {
-    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    background: rgba(255, 255, 255, 0.1); 
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
@@ -266,33 +266,6 @@ h2 {
     letter-spacing: 1px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #projects {
-        padding: 60px 20px;
-    }
-
-    .projects-container {
-        padding: 30px;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
-    .project img {
-        height: 140px;
-        width: 140px;
-    }
-
-    .project h1 {
-        font-size: 1.4em;
-    }
-
-    .project p {
-        font-size: 1em;
-    }
-}
 
 
 #skills {
@@ -356,8 +329,7 @@ form button:hover {
     background: #e0a800;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -386,7 +358,7 @@ form button:hover {
     .hamburger {
         display: block;
     }
-}
+} */
 @keyframes slideDown {
     0% {
         transform: translateY(-100%);
@@ -432,3 +404,57 @@ button:hover {
 #projects { animation-delay: 0.6s; }
 #skills { animation-delay: 0.8s; }
 #contact { animation-delay: 1s; }
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .navbar .hamburger {
+        display: flex;
+        
+    }
+    .navbar .logo{
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #home, #about, #resume, #projects, #skills, #contact {
+        padding: 50px 20px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
