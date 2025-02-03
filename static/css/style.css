@@ -121,7 +121,7 @@ body, html {
 }
 #about {
     padding: 80px 50px;
-    background: url('../images/abstract-background-gradient-modern-design_677411-3055.avif') no-repeat center center/cover;
+    background: url('../images/Laptop-Shoot-1920x1080.jpg') no-repeat center center/cover;
     color: rgb(255, 255, 255);
     margin-bottom: 3px;
    
@@ -141,20 +141,23 @@ body, html {
     border-radius: 50%;
     border: 5px solid #000000;
     object-fit: cover;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .about-details {
     max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.24);
      
 }
 
 .about-details h2 {
     color: #ffffff;
     margin-bottom: 20px;
-    margin-left: 90px;
+    margin-left: 100px;
 }
 .about-details ul{
+    color: white;
+    font-weight: bold;
     list-style: none;
     font-size: large;
 }
@@ -162,7 +165,7 @@ body, html {
 
 #resume {
     padding: 80px 50px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.938);
     color: white;
     text-align: center;
     margin-bottom: 2px;
